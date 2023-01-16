@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:visibility="gone">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="12dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/optionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:id="@+id/optionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 2"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:id="@+id/optionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 3"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:id="@+id/optionFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 4"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:id="@+id/optionFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 5"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:id="@+id/optionSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_border"
+                tools:text="option 6"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:layout_marginVertical="10dp"/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:layout_marginTop="10dp"
+                android:text="@string/submit"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="0"
+                    android:progress="0"
+                    style="?android:progressBarStyleHorizontal" />
+
+                <TextView
+                    android:id="@+id/progressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1/15"
+                    android:textSize="21sp"
+                    android:paddingStart="20dp"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

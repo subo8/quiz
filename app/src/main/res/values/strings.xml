@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">quizapp</string>
+    <string name="app_name">Quizzes app</string>
+    <string name="placeholder">Name</string>
+    <string name="hint">Please enter your name</string>
+    <string name="welcome">Welcome</string>
+    <string name="startButton">Begin</string>
+    <string name="totalQuestion">Total Question: %1$d</string>
+    <string name="totalScore">Your Score:  %1$d/%2$d</string>
+    <string name="wrong">Wrong Answer: %1$d</string>
+    <string name="congratsName">Congrats! %1$s</string>
+    <string name="submit">CHECK</string>
 </resources>
