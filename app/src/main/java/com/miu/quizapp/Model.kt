@@ -25,7 +25,7 @@ class Model: ViewModel() {
             var conn: HttpURLConnection? = null
 
             try {
-                val url = URL("https://quizapi.io/api/v1/questions?apiKey=${Constant.API_KEY}&limit=5&category=code&tags=javascript&multiple=false")
+                val url = URL("https://quizapi.io/api/v1/questions?apiKey=${Constant.API_KEY}&limit=15&category=code&tags=javascript&multiple=false")
                 conn = url.openConnection() as HttpURLConnection
 
                 val status: Int = conn.responseCode
